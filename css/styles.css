@@ -1,0 +1,190 @@
+body {
+    font-family: 'montserrat';
+    text-align: center;
+}
+
+#title {
+    background-color: #ff4c68;
+    color: white;
+    text-align: left;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-family: 'montserrat';
+    line-height: 1.5;
+}
+
+h2 {
+    line-height: 1.5;
+    font-size: 3rem;
+}
+
+p {
+    font-family: "ubuntu";
+    color: #8f8f8f;
+}
+
+
+.container-fluid {
+    padding: 3% 15% 7%;
+}
+/* Sometimes if there are two or more stylesheets targeting a single element, then the stylesheet linked in the html file at the last in the head
+will show its effect in the website.Both the stylesheet will affect the website but the one at the last will be rendered last,so its class eg-(
+container-fluid)  will have its effect rendered and applied on the website.*/
+
+/* Navbar */
+
+.navbar {
+    padding-bottom: 4.5rem;
+}
+
+.navbar-brand {
+    font-family: "ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-family: "montserrat";
+    font-size: 1.2rem;
+}
+
+/* Download buttons */
+
+.download-button {
+    margin: 5% 3% 5% 0%;
+}
+
+/* Title image */
+
+.title-img {
+    width: 20%;
+    transform: rotate(25deg);
+    position: absolute;
+    left: 56%;
+}
+
+#features {
+    padding: 5% 15%;
+    background-color: #fff;
+    position: relative;
+}
+
+.fe {
+    padding: 5%;
+}
+
+.icon {
+    color: #ef8172;
+    margin-bottom: 1rem;
+}
+
+.icon:hover {
+    color: #ff4c68;
+}
+
+/* Testimonials */
+
+#testimonials {
+    background-color:  #ef8172;
+    color: #fff;
+}
+
+.te-image {
+    width: 20%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+#press {
+    background-color: #ef8172;
+    padding: 3%;
+}
+
+.p-image {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+.carousel-item {
+    padding: 5% 15%;
+}
+
+/* pricing */
+
+#pricing {
+    padding: 5% 15%;
+}
+
+.pricing-column {
+    padding: 3% 2%;
+}
+
+/* cta */
+
+#cta {
+    background-color: #ff4c68;
+    padding: 5% 15%;
+    color: #fff;
+}
+
+.cta-head {
+    font-size: 3rem;
+    font-family: 'montserrat';
+    line-height: 1.5;
+}
+
+/* footer */
+
+#footer {
+    padding: 5% 15%;
+    background-color: #fff;
+}
+
+.fot {
+    margin: 1rem;
+}
+
+.foot-para {
+    font-size: 1.5rem;
+}
+
+/* Responsive for tablet and mobile */
+
+@media (max-width: 994px) {
+    .title-img {
+        position: static;
+        width: 40%;
+        transform: rotate(0deg);
+    }
+    .dem {
+        text-align: center;
+    }
+}
+
+/* Combining selectors
+h1,h2,h3,h4,h5,h6 {...} applies the changes to every header
+
+selector1 selector2 {...} is read right to left and is only applicable to parent child type.This means that selector2 must be in the child
+of the selector 1 
+Eg- <div class="up">
+        <div class="down">
+            ....
+        </div>
+    </div>
+    up down {...}
+    
+selector1selector2 {...} is read left to right and is only applicable to selector in the same element
+Eg- <div class="now">
+    </div>
+Here selector1 is div.
+divnow {...}*/
+
+/* Priority of css selectors:-
+    id > class > html tags.
+    But it also depends on the specificity of the id and class. */
